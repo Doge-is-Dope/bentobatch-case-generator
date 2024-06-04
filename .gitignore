@@ -1,0 +1,6 @@
+/processed
+/text
+/env
+.vscode
+.env
+__pycache__/
