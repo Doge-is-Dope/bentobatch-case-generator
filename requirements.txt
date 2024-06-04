@@ -1,0 +1,12 @@
+beautifulsoup4
+matplotlib
+numpy
+openai
+pandas
+regex
+requests
+scikit-learn
+scipy
+tenacity
+tiktoken
+urllib3
