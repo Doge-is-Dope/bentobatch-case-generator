@@ -1,0 +1,247 @@
+import PROTOCOLS_CONSTANT from '@/constants/protocols'
+import { Protocol } from '@/cases/types'
+import { attributesToHTMLStructure, protocolsToHTMLStructure } from '../utils'
+
+export const CASE_PROTOCOLS = [Protocol.Juice]
+const protocolInfo = CASE_PROTOCOLS?.map(
+  (protocol) => PROTOCOLS_CONSTANT[protocol]
+)
+
+export const ATTRIBUTES = [
+  // @todo: wait until the image of the protocols are ready
+  // {
+  //   id: 'protocols',
+  //   name: 'Protocols',
+  //   items: protocolInfo,
+  // },
+  { id: 'txn_count', name: 'TXN count', value: '5' },
+  { id: 'gas_saved', name: 'Gas saved', value: '~32%' },
+]
+
+const BATCH_DETAILS = [
+  {
+    tag: 'h3',
+    value: 'How to use?',
+  },
+  {
+    tag: 'ul',
+    children: [
+      {
+        tag: 'li',
+        children: [
+          {
+            tag: 'strong',
+            value: 'Step1: Connect Wallet',
+          },
+          {
+            tag: 'ul',
+            children: [
+              {
+                tag: 'li',
+                value: `Connect your Blocto wallet or register a new one directly through the "connect wallet"!`,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        tag: 'li',
+        children: [
+          {
+            tag: 'strong',
+            value: 'Step2: Deposit Funds',
+          },
+          {
+            tag: 'ul',
+            children: [
+              {
+                tag: 'li',
+                value:
+                  'Ensure you have ETH in your Blocto Wallet. Your wallet address can be found in the top right corner.',
+              },
+              {
+                tag: 'li',
+                value:
+                  'Note: There may be an extra gas fee required for activating the smart wallet for the first time on every chain.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        tag: 'li',
+        children: [
+          {
+            tag: 'strong',
+            value: 'Step3: Enter Amount',
+          },
+          {
+            tag: 'ul',
+            children: [
+              {
+                tag: 'li',
+                value:
+                  'Specify the amount of ETH you wish to use for this Batch.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        tag: 'li',
+        children: [
+          {
+            tag: 'strong',
+            value: 'Step4: Confirm Your Batch!',
+          },
+          {
+            tag: 'ul',
+            children: [
+              {
+                tag: 'li',
+                value:
+                  'Note: If you are using Blocto wallet App, "Send Later" function may result in losing your eligibility for Bento Boxes!',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        tag: 'li',
+        children: [
+          {
+            tag: 'strong',
+            value: 'Check your assets',
+          },
+          {
+            tag: 'ul',
+            children: [
+              {
+                tag: 'li',
+                children: [
+                  {
+                    tag: '',
+                    value: 'Review your assets on ',
+                  },
+                  {
+                    tag: 'span',
+                    value: '',
+                    children: [
+                      {
+                        tag: 'a',
+                        value: 'Juice Website',
+                        props: {
+                          href: 'https://app.juice.finance/vaults/0x741011f52B7499ca951f8b8Ee547DD3Cdd813Fda',
+                          target: '_blank',
+                          rel: 'noopener noreferrer nofollow',
+                        },
+                      },
+                    ],
+                  },
+                  {
+                    tag: '',
+                    value: '.',
+                  },
+                ],
+              },
+              {
+                tag: 'li',
+                children: [
+                  {
+                    tag: '',
+                    value:
+                      "Please use WalletConnect to connect your Blocto Wallet. You'll need the Blocto App to scan and log in. ",
+                  },
+                  {
+                    tag: 'span',
+                    children: [
+                      {
+                        tag: 'a',
+                        value: 'Download Blocto App',
+                        props: {
+                          href: 'https://blocto.io/download',
+                          target: '_blank',
+                          rel: 'noopener noreferrer nofollow',
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    tag: 'h3',
+    value: 'Protocols',
+  },
+  {
+    tag: 'ul',
+    children: protocolsToHTMLStructure(protocolInfo),
+  },
+  {
+    tag: 'h3',
+    value: 'Summary',
+  },
+  {
+    tag: 'ul',
+    children: [
+      ...attributesToHTMLStructure(ATTRIBUTES, ['txn_count', 'gas_saved']),
+      {
+        tag: 'li',
+        value:
+          'Security in Batch: Exact approval amount for all token transfer',
+      },
+    ],
+  },
+  {
+    tag: 'h3',
+    value: 'Batch Details',
+  },
+  {
+    tag: 'ul',
+    children: [
+      {
+        tag: 'li',
+        value: 'Wrap ETH to wETH',
+      },
+      {
+        tag: 'li',
+        value: 'Approve wETH for Juice',
+      },
+      {
+        tag: 'li',
+        value: 'Deposit wETH to Juice',
+      },
+      {
+        tag: 'li',
+        value: 'Borrow wETH from Juice',
+      },
+      {
+        tag: 'li',
+        value: 'Deposit wETH to Juice ',
+        children: [
+          {
+            tag: 'span',
+            children: [
+              {
+                tag: 'a',
+                props: {
+                  href: 'https://app.juice.finance/vaults/0x741011f52B7499ca951f8b8Ee547DD3Cdd813Fda',
+                  target: '_blank',
+                  rel: 'noopener noreferrer nofollow',
+                },
+                value: 'Thruster V3 Strategy',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+]
+
+export default BATCH_DETAILS

@@ -1,0 +1,9 @@
+[
+    {
+        "inputs": [],
+        "name": "stake",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]
