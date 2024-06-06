@@ -22,39 +22,30 @@ import USDCE_BATCH_DETAILS, {
   ATTRIBUTES as USDCE_ATTRIBUTES,
 } from "./usdce.details";
 
-const buildYearnV3VaultCase = (
-  id: string,
-  name: string,
-  description: string,
-  details: IHTMLStructure[],
-  protocols: Protocol[],
-  attributes: IAttribute[],
-  tags: Tag[],
-  blockchain: Chain,
-  tokenName: string,
-  tokenDecimals: number,
-  tokenContract: Address,
-  vaultName: string,
-  vaultContract: Address,
-  actionUrl: string
-): BatchCase => {
+const buildYearnV3VaultCase = (): BatchCase => {
+  const tokenName = "USDC.e";
+  const tokenDecimals = 6;
+  const tokenContract = "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174";
+  const vaultName = "USDC.e-A";
+  const vaultContract = "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0";
+
   return {
-    id: id,
-    name: name,
-    description: description,
-    details,
-    protocols,
-    attributes,
+    id: "yearn_v3_usdce",
+    name: "Yield farming on Yearn with USDC.e",
+    description: "Deposit USDC.e to Yearn finance’s V3 Vault. Auto compound and yeild high APY% with USDC.e",
+    details: USDCE_BATCH_DETAILS,
+    protocols: USDCE_CASE_PROTOCOLS,
+    attributes: USDCE_ATTRIBUTES,
     website: {
       title: "Yearn.Fi",
       url: "https://yearn.fi",
     },
-    tags,
+    tags: [{ title: TagTitle.Defi }, { title: TagTitle.Yield }],
     curatorTwitter: {
       name: "Bento Batch 🍱",
       url: "https://x.com/bentobatch",
     },
-    networkId: blockchain.id,
+    networkId: polygon.id,
     atomic: true,
     supportedWalletTypes: [WalletType.AA, WalletType.EOA],
     inputs: [
@@ -140,7 +131,7 @@ const buildYearnV3VaultCase = (
     setActions: () => {
       return [
         {
-          href: actionUrl,
+          href: "https://yearn.fi/v3/137/0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0?action=withdraw",
           text: "Manage Assets (Yearn)",
         },
       ];
@@ -148,23 +139,4 @@ const buildYearnV3VaultCase = (
   };
 };
 
-const caseApproveAndDepositYearnV3USDCe: BatchCase = buildYearnV3VaultCase(
-  "yearn_v3_usdce",
-  "Yield farming on Yearn with USDC.e",
-  "Deposit USDC.e to Yearn finance’s V3 Vault. Auto compound and yeild high APY% with USDC.e",
-  USDCE_BATCH_DETAILS,
-  USDCE_CASE_PROTOCOLS,
-  USDCE_ATTRIBUTES,
-  [{ title: TagTitle.Defi }, { title: TagTitle.Yield }],
-  polygon,
-  "USDC.e",
-  6,
-  "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
-  "USDC.e-A",
-  "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0",
-  "https://yearn.fi/v3/137/0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0?action=withdraw"
-);
-
-const yearnCases: BatchCase[] = [caseApproveAndDepositYearnV3USDCe];
-
-export default yearnCases;
+export default { buildYearnV3VaultCase };

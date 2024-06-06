@@ -22,39 +22,31 @@ import DAIA_BATCH_DETAILS, {
   ATTRIBUTES as DAIA_ATTRIBUTES,
 } from "./daia.details";
 
-const buildYearnV3VaultCase = (
-  id: string,
-  name: string,
-  description: string,
-  details: IHTMLStructure[],
-  protocols: Protocol[],
-  attributes: IAttribute[],
-  tags: Tag[],
-  blockchain: Chain,
-  tokenName: string,
-  tokenDecimals: number,
-  tokenContract: Address,
-  vaultName: string,
-  vaultContract: Address,
-  actionUrl: string
-): BatchCase => {
+const buildYearnV3VaultCase = (): BatchCase => {
+  const tokenName = "DAI";
+  const tokenDecimals = 18;
+  const tokenContract = "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063";
+  const vaultName = "DAI-A";
+  const vaultContract = "0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B";
+  const actionUrl = "https://yearn.fi/v3/137/0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B?action=withdraw";
+
   return {
-    id: id,
-    name: name,
-    description: description,
-    details,
-    protocols,
-    attributes,
+    id: "yearn_v3_dai_a",
+    name: "Yield farming on Yearn with DAI-A",
+    description: "Deposit DAI to Yearn finance’s V3 Vault. Auto compound and yeild high APY% with DAI",
+    details: DAIA_BATCH_DETAILS,
+    protocols: DAIA_CASE_PROTOCOLS,
+    attributes: DAIA_ATTRIBUTES,
     website: {
       title: "Yearn.Fi",
       url: "https://yearn.fi",
     },
-    tags,
+    tags: [{ title: TagTitle.Defi }, { title: TagTitle.Yield }],
     curatorTwitter: {
       name: "Bento Batch 🍱",
       url: "https://x.com/bentobatch",
     },
-    networkId: blockchain.id,
+    networkId: polygon.id,
     atomic: true,
     supportedWalletTypes: [WalletType.AA, WalletType.EOA],
     inputs: [
@@ -148,22 +140,7 @@ const buildYearnV3VaultCase = (
   };
 };
 
-const caseApproveAndDepositYearnV3DAI: BatchCase = buildYearnV3VaultCase(
-  "yearn_v3_dai_a",
-  "Yield farming on Yearn with DAI-A",
-  "Deposit DAI to Yearn finance’s V3 Vault. Auto compound and yeild high APY% with DAI",
-  DAIA_BATCH_DETAILS,
-  DAIA_CASE_PROTOCOLS,
-  DAIA_ATTRIBUTES,
-  [{ title: TagTitle.Defi }, { title: TagTitle.Yield }],
-  polygon,
-  "DAI",
-  18,
-  "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-  "DAI-A",
-  "0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B",
-  "https://yearn.fi/v3/137/0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B?action=withdraw"
-);
+const caseApproveAndDepositYearnV3DAI: BatchCase = buildYearnV3VaultCase();
 
 const yearnCases: BatchCase[] = [caseApproveAndDepositYearnV3DAI];
 
