@@ -13,16 +13,13 @@ def remove_newlines(serie):
     return serie
 
 
-def extract_preview_tx(code: str):
-    # Regular expression to match the previewTx array
-    preview_tx_pattern = re.compile(r"previewTx:\s*\[(.*?)\]", re.DOTALL)
-
-    # Search for the pattern in the TypeScript code
-    match = preview_tx_pattern.search(code)
-
-    if match:
-        preview_tx_code = match.group(1)
-        print("Extracted previewTx code:")
-        print(preview_tx_code)
-    else:
-        print("previewTx array not found in the provided TypeScript code.")
+def read_constants():
+    """
+    Read constants as additional data
+    """
+    data = {}
+    with open("data/networks.csv", "r") as f:
+        data["networks"] = f.read()
+    with open("data/tokens.csv", "r") as f:
+        data["tokens"] = f.read()
+    return data
