@@ -48,17 +48,17 @@ const multiSenderUsdt: BatchCase = {
     {
       name: 'Transfer',
       description: 'USDT to recipient',
-      to: '0x09Fb377F01229892a0F19364A08d997509e69Ba1',
+      to: tokenConfig.addr,
     },
     {
       name: 'Transfer',
       description: 'USDT to recipient',
-      to: '0x69F1CDa80d4b9De5fC084938037a34caA480e2d0',
+      to: tokenConfig.addr,
     },
     {
       name: 'Transfer',
       description: 'USDT to recipient',
-      to: '0x1230b1F9B5eDBd8dD082aEC42188686D546b9d5c',
+      to: tokenConfig.addr,
     },
   ],
   supportedWalletTypes: [WalletType.AA, WalletType.EOA],
