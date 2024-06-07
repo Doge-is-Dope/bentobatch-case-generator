@@ -23,3 +23,15 @@ def read_constants():
     with open("data/tokens.csv", "r") as f:
         data["tokens"] = f.read()
     return data
+
+
+def get_example_qa():
+    """
+    Get user question and assistant answer for examples from files.
+    """
+    qa = []
+    with open("data/example_question.txt", "r") as f:
+        qa.append(f.read())
+    with open("data/example_answer.txt", "r") as f:
+        qa.append(f.read())
+    return qa

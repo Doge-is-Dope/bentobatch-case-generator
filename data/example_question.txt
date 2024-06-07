@@ -1,0 +1,25 @@
+Generate the code based on the question. Modify the code as needed. `inputs` can be omitted.
+Use the following data as reference:
+```
+Network, ChainID
+Ethereum, 1
+Polygon, 137
+Arbitrum, 42161
+Optimism, 10
+Base, 8453
+Blast, 81457
+Linea, 59144
+
+Symbol, Decimals, Contract Address, Network
+USDT, 6, 0xdAC17F958D2ee523a2206206994597C13D831ec7, Ethereum
+USDT, 6, 0xc2132D05D31c914a87C6611C10748AEb04B58e8F, Polygon
+USDT, 6, 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9, Arbitrum
+USDT, 6, 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58, Optimism
+USDC, 6, 0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48, Ethereum
+USDC, 6, 0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359, Polygon
+USDC, 6, 0xaf88d065e77c8cC2239327C5EDb3A432268e5831, Arbitrum
+USDC, 6, 0x0b2c639c533813f4aa9d7837caf62653d097ff85, Optimism
+USDC, 6, 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913, Base
+```
+
+Question: I would like to send 10 USDT to each of the following addresses on Polygon: '0x09Fb377F01229892a0F19364A08d997509e69Ba1', '0x69F1CDa80d4b9De5fC084938037a34caA480e2d0', and '0x1230b1F9B5eDBd8dD082aEC42188686D546b9d5c'.
