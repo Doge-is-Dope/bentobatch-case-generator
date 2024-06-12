@@ -1,0 +1,107 @@
+
+// This is the template for a batch case
+
+// Token to be sent
+const tokenConfig = {
+  addr: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F' as `0x${string}`,
+  symbol: 'USDT',
+  decimals: 6,
+}
+
+// BatchCase
+const sendUsdtPolygon: BatchCase = {
+  id: 'send_usdt_polygon', // unique id. Update as needed.
+  name: 'Send 30 USDT to Multiple Addresses', // name of the batch case. Update as needed.
+  description: 'One-Click to send USDT to multiple addresses.', // description of the batch case. Update as needed.
+  details: [], // Empty array
+  website: {}, // Empty object
+  tags: [TagTitle.Asset].map((name) => ({ title: name }) as Tag), // Tags. Update as needed.
+  curatorTwitter: {}, // Empty object
+  protocols: [], // Empty array
+  attributes: [], // Empty array
+  networkId: 137, // Chain ID. Update as needed.
+  atomic: true, // Always true
+  renderExpiry: undefined, // Always undefined
+  inputs: [], // no inputs required
+  previewTx: [
+    {
+      name: 'Transfer',
+      description: 'USDT to recipient',
+      to: tokenConfig.addr, // USDT contract address
+    },
+    {
+      name: 'Transfer',
+      description: 'USDT to recipient',
+      to: tokenConfig.addr, // USDT contract address
+    },
+    {
+      name: 'Transfer',
+      description: 'USDT to recipient',
+      to: tokenConfig.addr,  // USDT contract address
+    },
+  ],
+  supportedWalletTypes: [WalletType.AA, WalletType.EOA],
+  render: async (context: Context) => {
+    const txs: Tx[] = []
+
+    const userAddress = context.account.address
+    if (!userAddress) throw new AddressNotFoundError()
+
+    // const inputs = context.inputs as string[] // Omitted for no inputs
+
+    // Beware of the inputs
+    const inputs = [
+      '10',
+      '0x09Fb377F01229892a0F19364A08d997509e69Ba1, 0x69F1CDa80d4b9De5fC084938037a34caA480e2d0, 0x1230b1F9B5eDBd8dD082aEC42188686D546b9d5c',
+    ]
+    const amount = parseUnits(inputs[0], tokenConfig.decimals)
+    const addresses = inputs[1]
+      .split(',')
+      .filter((address) => address)
+      .map((address) => {
+        const trimmedAddress = address.trim()
+        if (!isAddress(trimmedAddress)) {
+          throw Error('Recipients contain invalid address(es)')
+        }
+        return trimmedAddress
+      })
+
+    if (addresses.length > 30) {
+      throw Error('The recipients exceeds the limit of 30')
+    }
+
+    const totalAmount = amount * BigInt(addresses.length)
+    const userBalance = await balanceOf({
+      chain: context.chain,
+      userAddress: userAddress,
+      tokenAddress: tokenConfig.addr,
+    })
+    if (totalAmount > userBalance) {
+      throw Error(
+        `Insufficient balance: need ${formatUnits(totalAmount, tokenConfig.decimals)} ${tokenConfig.symbol} in total`
+      )
+    }
+
+    addresses.forEach((address) => {
+      txs.push({
+        name: 'Transfer',
+        description: `${inputs[0]} ${tokenConfig.symbol} to ${address}`,
+        to: tokenConfig.addr,
+        value: 0n,
+        data: encodeFunctionData({
+          abi: erc20Abi,
+          functionName: 'transfer',
+          args: [
+            address, // recipient
+            amount, // amount
+          ],
+        }),
+        abi: erc20Abi as Abi,
+      })
+    })
+
+    return txs
+  },
+}
+
+export default sendUsdtPolygon
