@@ -2,36 +2,46 @@ import re
 import json
 
 
-def remove_newlines(serie):
+def get_supported_actions() -> dict[str, str]:
     """
-    Remove newlines from a pandas series for better processing.
+    Get supported actions from a json file
     """
-    serie = serie.str.replace("\n", " ")
-    serie = serie.str.replace("\\n", " ")
-    serie = serie.str.replace("  ", " ")
-    serie = serie.str.replace("  ", " ")
-    return serie
+    file_path = "data/action.json"
+    with open(file_path, "r") as file:
+        json_content = json.load(file)
+    return {item["action"]: item["description"] for item in json_content}
 
 
-def read_constants():
+def evaluate_action(action_item: dict, supported_actions: dict[str, str]) -> None:
     """
-    Read constants as additional data
+    Evaluate an action item
     """
-    data = {}
-    with open("data/networks.csv", "r") as f:
-        data["networks"] = f.read()
-    with open("data/tokens.csv", "r") as f:
-        data["tokens"] = f.read()
-    return data
+    action = action_item["action"]
+    if action in supported_actions:
+        chain = action_item["chain"]
+        amount = action_item["amount"]
+        token = action_item["token"]
+        receiver = action_item["receiver"]
+        print(
+            supported_actions[action].format(
+                chain=chain, amount=amount, token=token, receiver=receiver
+            )
+        )
+    else:
+        print(f"Unknown action: {action}")
 
 
-def get_example_qa():
-    """
-    Get user question and assistant answer for examples from files.
-    """
-    qa = []
-    with open("data/example_question.txt", "r") as f:
-        qa.append(f.read())
-    with open("data/example_answer.txt", "r") as f:
-        qa.append(f.read())
-    return qa
+if __name__ == "__main__":
+    pass
+    # supported_actions = get_supported_actions()
+    # actions = [
+    #     {
+    #         "action": "transfer",
+    #         "chain": "Blast",
+    #         "amount": "12",
+    #         "token": "ETH",
+    #         "receiver": "trump.eth",
+    #     }
+    # ]
+    # for action in actions:
+    #     evaluate_action(action, supported_actions)
