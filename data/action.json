@@ -1,0 +1,22 @@
+[
+  {
+    "action": "transfer",
+    "description": "You are about to send {amount} {token_symbol} to {receiver} on {network_name}.",
+    "data": {
+      "from": "",
+      "to": "",
+      "value": "",
+      "data": ""
+    }
+  },
+  {
+    "action": "swap",
+    "description": "You are about to swap {token_in_amount} {token_in_symbol} for {token_out_amount} {token_out_symbol} on {network}.",
+    "data": {
+      "from": "",
+      "to": "",
+      "value": "",
+      "data": ""
+    }
+  }
+]

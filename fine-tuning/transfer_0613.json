@@ -1,0 +1,1627 @@
+[
+  {
+    "prompt": "I want to send 50 USDC to 0x1234567890123456789012345678901234567890 on Clement.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "50",
+        "token": "USDC",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 1000 wBTC to 0x1234567890123456789012345678901234567890 on Gnosis!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "1000",
+        "token": "wBTC",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transferring 5000 ETH to receiver 0x1234567890123456789012345678901234567890 on Gnosis?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "5000",
+        "token": "ETH",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 200 DAI to 0x1234567890123456789012345678901234567890 on Clement please.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "200",
+        "token": "DAI",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to transfer 100 USD to 0x1234567890123456789012345678901234567890 on Gnosis.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "USD",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 50.123 BTC to 0x37f08Bd5761C21f39d8B492e2AA771015654Ecb7 on Clement!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "50.123",
+        "token": "BTC",
+        "receiver": "0x37f08Bd5761C21f39d8B492e2AA771015654Ecb7"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 2000 ETH to 0x1234567890123456789012345678901234567890 on Naruto please.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Naruto",
+        "amount": "2000",
+        "token": "ETH",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 500 USDT to receiver 0x1234567890123456789012345678901234567890 on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "500",
+        "token": "USDT",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 100 USDC to 0x9876543210987654321098765432109876543210 on Gnosis.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "USDC",
+        "receiver": "0x9876543210987654321098765432109876543210"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 50 ETH to 0xabcdef0123456789abcdef0123456789abcdef01 on Clement!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "50",
+        "token": "ETH",
+        "receiver": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 2000 DAI to 0xdeadbeef0123456789deadbeef0123456789dead on Gnosis.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "2000",
+        "token": "DAI",
+        "receiver": "0xdeadbeef0123456789deadbeef0123456789dead"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 500 USDT to receiver 0x5555555555555555555555555555555555555555 on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "500",
+        "token": "USDT",
+        "receiver": "0x5555555555555555555555555555555555555555"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 100 USDC to 0x9876543210987654321098765432109876543210 on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDC",
+        "receiver": "0x9876543210987654321098765432109876543210"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 50 eth and 0.3 USDT to 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "ETH",
+        "receiver": "0xabcdef0123456789abcdef0123456789abcdef01"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.3",
+        "token": "USDT",
+        "receiver": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 2000 dai to 0xdeadbeef0123456789deadbeef0123456789dead on Taiko.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "2000",
+        "token": "DAI",
+        "receiver": "0xdeadbeef0123456789deadbeef0123456789dead"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 0.1 ETH to 0x9876543210987654321098765432109876543210 on Ethereum!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.1",
+        "token": "ETH",
+        "receiver": "0x9876543210987654321098765432109876543210"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me send 1000.123 DAI to 0xdeadbeef0123456789deadbeef0123456789dead on Gnosis.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "1000.123",
+        "token": "DAI",
+        "receiver": "0xdeadbeef0123456789deadbeef0123456789dead"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to transfer 500 USDT to 0x5555555555555555555555555555555555555555 on Optimism.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "USDT",
+        "receiver": "0x5555555555555555555555555555555555555555"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to transfer 500 USDT and 10 USDC to 0x5555555555555555555555555555555555555555 on Optimism.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "USDT",
+        "receiver": "0x5555555555555555555555555555555555555555"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "0x5555555555555555555555555555555555555555"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 200 LINK to 0x5432109876543210987654321098765432109876 on Gnosis.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "200",
+        "token": "LINK",
+        "receiver": "0x5432109876543210987654321098765432109876"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 0.5 ETH to 0x1234567890abcdefABCDEF1234567890abcdefab on Optimism!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.5",
+        "token": "ETH",
+        "receiver": "0x1234567890abcdefABCDEF1234567890abcdefab"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 1000 USDC to 0x63EF7fb2e47AA5a8aC05956bba4a338D23Ea6415 on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x63EF7fb2e47AA5a8aC05956bba4a338D23Ea6415"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 500 DAI to receiver 0x9999999999999999999999999999999999999999 on Scroll?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 100 USDT to 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 100 USDT to 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE and 0.1 USDT to 0x9999999999999999999999999999999999999999 on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.1",
+        "token": "USDT",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 0.2 ETH to 0x9876543210ABCDEF09876543210ABCDEF09876543 on Optimism!",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.2",
+        "token": "ETH",
+        "receiver": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 500 DAI to 0xf2A9411D9D30Fc8023d2bbfACf95Bc4E38056eeC on Arbitrum",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Arbitrum",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xf2A9411D9D30Fc8023d2bbfACf95Bc4E38056eeC"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 500 DAI and 10.5 USDT to 0xf2A9411D9D30Fc8023d2bbfACf95Bc4E38056eeC on Arbitrum",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Arbitrum",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xf2A9411D9D30Fc8023d2bbfACf95Bc4E38056eeC"
+      },
+      {
+        "action": "transfer",
+        "chain": "Arbitrum",
+        "amount": "10.5",
+        "token": "USDT",
+        "receiver": "0xf2A9411D9D30Fc8023d2bbfACf95Bc4E38056eeC"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 1000 USDC to receiver 0x9999999999999999999999999999999999999999?",
+    "completion": [
+      {
+        "action": "transfer",
+        "token": "USDC",
+        "chain": "",
+        "receiver": "0x9999999999999999999999999999999999999999",
+        "amount": "1000"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me send 1000 to 0xea826B687AC8Ba4f528aF009AA6C02F8c12fa310?",
+    "completion": [
+      {
+        "action": "transfer",
+        "token": "",
+        "chain": "",
+        "receiver": "0xea826B687AC8Ba4f528aF009AA6C02F8c12fa310",
+        "amount": "1000"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you transfer 1000 to 0xea826B687AC8Ba4f528aF009AA6C02F8c12fa310?",
+    "completion": [
+      {
+        "action": "transfer",
+        "token": "",
+        "chain": "",
+        "receiver": "0xea826B687AC8Ba4f528aF009AA6C02F8c12fa310",
+        "amount": "1000"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 1000 USDC to receiver 0x9999999999999999999999999999999999999999 on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 1000 USDC and 10 ETH to receiver 0x9999999999999999999999999999999999999999 on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      },
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "10",
+        "token": "ETH",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer USDC to receiver 0x64EE2B82d274fe4315BbD998a8e9fe974FB6CF46 on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "",
+        "token": "USDC",
+        "receiver": "0x64EE2B82d274fe4315BbD998a8e9fe974FB6CF46"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me send USDT to receiver 0x5F4cA01672Bf97FDa653d152728637B4C43477f2 on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "",
+        "token": "USDT",
+        "receiver": "0x5F4cA01672Bf97FDa653d152728637B4C43477f2"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me transfer 10 USDC to my friend on Clement?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "my_friend_address"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 105 USDT to the receiver 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum network.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "105",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "Could you assist me in sending 0.2 ETH to the wallet 0x9876543210ABCDEF09876543210ABCDEF09876543 on Optimism?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.2",
+        "token": "ETH",
+        "receiver": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "I'd like to transfer 500 DAI to the recipient 0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef on Scroll",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      }
+    ]
+  },
+  {
+    "prompt": "Kindly assist me in transferring 1000 USDC to the following receiver: 0x9999999999999999999999999999999999999999 on Clement.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "Kindly assist me in transferring 1000 USDC to the following receivers: [0x9999999999999999999999999999999999999999, 0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef] on Clement.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      },
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to transfer 100 USDT to 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum. Please help me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "Help me send 0.2 ETH to 0x9876543210ABCDEF09876543210ABCDEF09876543 on Optimism. I need to complete the transfer quickly.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.2",
+        "token": "ETH",
+        "receiver": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to transfer 500 DAI to 0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef on Scroll. Can you assist me with that?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me transfer 1000 USDC to 0x9999999999999999999999999999999999999999 on Clement. It's an urgent transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 100 USDT to 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum. Please help me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "Assist me in sending 0.2 ETH to 0x9876543210ABCDEF09876543210ABCDEF09876543 on Optimism. I need to complete the transfer urgently.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.2",
+        "token": "ETH",
+        "receiver": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "I'd like to transfer 500 DAI to 0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef on Taiko. Can you assist me with that, PLEASE",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      }
+    ]
+  },
+  {
+    "prompt": "I'd like to transfer 500 DAI to 0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef and 10 USDT to 0x5F4cA01672Bf97FDa653d152728637B4C43477f2 on Taiko. Can you assist me with that, PLEASE",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "10",
+        "token": "USDT",
+        "receiver": "0x5F4cA01672Bf97FDa653d152728637B4C43477f2"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to transfer 100 USDT to the receiver 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum network.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "I'd like to transfer 500 DAI and 10 USDT to the recipient 0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef on Taiko. Can you help me with that?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "10",
+        "token": "USDT",
+        "receiver": "0xdeadbeefDEADBEEFdeadbeefDEADBEEFdeadbeef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please assist me in transferring 1000 USDC to the following receiver: 0x9999999999999999999999999999999999999999 on Clement.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x9999999999999999999999999999999999999999"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 100 USDT to the receiver 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum network.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 100 USDT & 1 DAI to the 0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE on Ethereum network.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1",
+        "token": "DAI",
+        "receiver": "0xabcdeABCDEabcdeABCDEabcdeABCDEabcdeABCDE"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 50 USDT to the receiver 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "USDT",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 50 USDT to the receiver 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef and 50 USDT to the receiver 0x5F4cA01672Bf97FDa653d152728637B4C43477f2 on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "USDT",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "USDT",
+        "receiver": "0x5F4cA01672Bf97FDa653d152728637B4C43477f2"
+      }
+    ]
+  },
+  {
+    "prompt": "Assist me in transferring 0.1 ETH to the wallet 0x98765ABCDEF0123456789ABCDEF0123456789ABC on Optimism.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "0.1",
+        "token": "ETH",
+        "receiver": "0x98765ABCDEF0123456789ABCDEF0123456789ABC"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 50 USDT to 0xFe8e15ae884524eFfc2fe91dF6f5BA40D8533A92 on Gnosis.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "50",
+        "token": "USDT",
+        "receiver": "0xFe8e15ae884524eFfc2fe91dF6f5BA40D8533A92"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 10 USDC to receiver 0x1234567890123456789012345678901234567890 on Clement.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to give 10 USDC to 0x1234567890123456789012345678901234567890 on Clement.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 20 PEPE to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "token": "PEPE",
+        "amount": "20",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef",
+        "chain": "Ethereum"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 20 PEPE to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef and send 10 USDT to Vitalik.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "20",
+        "token": "PEPE",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "USDT",
+        "receiver": "Vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I'd like to send 2000.123 DAI to 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Taiko. Please help me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "2000.123",
+        "token": "DAI",
+        "receiver": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 500 USDT and 10 USDC to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Optimism. Can you assist me with the transaction?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "USDT",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me deliver 100 ETH to 0x1234567890123456789012345678901234567890 on Clement. It's an urgent transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "100",
+        "token": "ETH",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to send 50.123 LINK to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Gnosis. Can you help me with that, please?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "50.123",
+        "token": "LINK",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to send 50.123 LINK and 10 USD to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Gnosis. Can you help me with that, please?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "50.123",
+        "token": "LINK",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "10",
+        "token": "USD",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 1000 USDC to 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Taiko. Please assist me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 200 wBTC to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Clement. Can you guide me through the process?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "200",
+        "token": "wBTC",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to send 1000 USDT to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Ethereum. Please assist me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDT",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to send 1000 USDT to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF, 0x5F4cA01672Bf97FDa653d152728637B4C43477f2 and 0xcE1e88E9D2904d84fc1b1e53B780cB06D7567D98 on Ethereum. Please assist me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDT",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDT",
+        "receiver": "0x5F4cA01672Bf97FDa653d152728637B4C43477f2"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDT",
+        "receiver": "0xcE1e88E9D2904d84fc1b1e53B780cB06D7567D98"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 50 LINK to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Gnosis. Can you help me with that?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "50",
+        "token": "LINK",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please assist me in sending 2000 DAI to 0x1234567890123456789012345678901234567890 on Clement. It's a time-sensitive transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "2000",
+        "token": "DAI",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to transfer 500 ETH to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Taiko. Can you guide me through the process?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "500",
+        "token": "ETH",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 100 USDC to 0x1234567890123456789012345678901234567890 on Gnosis. Please help me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "USDC",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Hey! Can you assist me in sending 200 wBTC to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Optimism? It's an urgent transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "200",
+        "token": "wBTC",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Hey, I need to transfer 1000 DAI to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Ethereum. Please proceed with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "DAI",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Hey, I want to send 50 DAI to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Taiko. Can you assist me with that, please?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "50",
+        "token": "DAI",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me transfer 1000 USDT to blocto.eth on Gnosis. It's an important transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "1000",
+        "token": "USDT",
+        "receiver": "blocto.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 200 LINK to blocto.eth on Clement. Can you guide me through the process?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "200",
+        "token": "LINK",
+        "receiver": "blocto.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 500 ETH to vitalik.eth on Taiko. Please assist me with the transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "500",
+        "token": "ETH",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Hey, can you help me transfer 100 USDC to hello.eth on Gnosis? It's an urgent transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "USDC",
+        "receiver": "hello.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 200 wBTC to hello.eth and vitalik.eth on Optimism. Please proceed with the transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "200",
+        "token": "wBTC",
+        "receiver": "hello.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "200",
+        "token": "wBTC",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 0.1 USDC to hello.eth and 10 USDT vitalik.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.1",
+        "token": "USDC",
+        "receiver": "hello.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "USDT",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to send 1000 DAI to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Ethereum. Can you assist me with that?",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "DAI",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please transfer 50 wBTC to the receiver 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF and 10 USDT to hello.eth on Taiko. It's an urgent transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "50",
+        "token": "wBTC",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      },
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "10",
+        "token": "USDT",
+        "receiver": "hello.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to send 1000 USDC to 0x1234567890123456789012345678901234567890 on Naruto. Kindly assist me with the transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Naruto",
+        "amount": "1000",
+        "token": "USDC",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 200 ETH to hello.eth on Optimism. Please ensure the transaction is processed promptly.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "200",
+        "token": "ETH",
+        "receiver": "hello.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me send 500 DAI to the receiver 0x1234567890123456789012345678901234567890 on Clement? It's an important transfer for me.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to transfer 100 USDT to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Ethereum. Please assist me with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please proceed with transferring 200 LINK to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Arbitrum. I appreciate your assistance.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Arbitrum",
+        "amount": "200",
+        "token": "LINK",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 1000 ETH to blocto.eth on Taiko. Kindly complete the transaction at your earliest convenience.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "1000",
+        "token": "ETH",
+        "receiver": "blocto.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 50 UNI to blocto.eth on Optimism. Please assist me in completing the transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "UNI",
+        "receiver": "blocto.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 50 UNI to blocto.eth, hello.eth and vitalik.eth on Optimism. Please assist me in completing the transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "UNI",
+        "receiver": "blocto.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "UNI",
+        "receiver": "hello.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 50 UNI to blocto.eth, hello.eth and vitalik.eth on Optimism. Please assist me in completing the transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "UNI",
+        "receiver": "blocto.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "UNI",
+        "receiver": "hello.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "UNI",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 1000 USDT to the wallet receiver 0x1234567890123456789012345678901234567890 and 10 USDC to apple.eth on Ethereum. It's an urgent transaction, please process it quickly.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDT",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "apple.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 0.5 USDT to blocto.eth and 10 USDC to apple.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.5",
+        "token": "USDT",
+        "receiver": "blocto.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "apple.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 0.5 USDT to blocto.eth, 10 USDC to apple.eth and 101 USDC to vitalik.eth on Blast.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Blast",
+        "amount": "0.5",
+        "token": "USDT",
+        "receiver": "blocto.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Blast",
+        "amount": "10",
+        "token": "USDC",
+        "receiver": "apple.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Blast",
+        "amount": "101",
+        "token": "USDC",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me send 200 ETH to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Clement. I need this transaction to be completed as soon as possible.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Clement",
+        "amount": "200",
+        "token": "ETH",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you assist me in transferring 500 DAI to 0x1234567890123456789012345678901234567890 on Taiko? This transfer is important, and I appreciate your help.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Taiko",
+        "amount": "500",
+        "token": "DAI",
+        "receiver": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to send 100 USDT to the receiver 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Gnosis. Please proceed with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "token": "USDT",
+        "chain": "Gnosis",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef",
+        "amount": "100"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to send 100 USDT to the receiver 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef & 0xcE1e88E9D2904d84fc1b1e53B780cB06D7567D98on Gnosis. Please proceed with the transaction.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      },
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "USDT",
+        "receiver": "0xcE1e88E9D2904d84fc1b1e53B780cB06D7567D98on"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 200 LINK to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Ethereum. Please help me with this transfer.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "200",
+        "token": "LINK",
+        "receiver": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Please assist me in sending 1000 ETH to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Gnosis. This transfer is time-sensitive.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Gnosis",
+        "amount": "1000",
+        "token": "ETH",
+        "receiver": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 10 PEPE to vitalik.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "PEPE",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 0.5 USDC and send 0.001 USDT to hello.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.5",
+        "token": "USDC",
+        "receiver": "vitalik.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.001",
+        "token": "USDT",
+        "receiver": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 0.003 popo to hello.eth on Optimism.",
+    "completion": {
+      "action": "transfer",
+      "chain": "Optimism",
+      "amount": "0.003",
+      "token": "popo",
+      "receiver": "hello.eth"
+    }
+  },
+  {
+    "prompt": "Transfer 30 WETH to 0x436f795B64E23E6cE7792af4923A68AFD3967952 and 1 USDC to 0x368DADfc4B19572D724C98A65a194314066ddA33 on Blast.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Blast",
+        "amount": "30",
+        "token": "WETH",
+        "receiver": "0x436f795B64E23E6cE7792af4923A68AFD3967952"
+      },
+      {
+        "action": "transfer",
+        "chain": "Blast",
+        "amount": "1",
+        "token": "USDC",
+        "receiver": "0x368DADfc4B19572D724C98A65a194314066ddA33"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer 30.123 WETH to each of the following addresses: 0x436f795B64E23E6cE7792af4923A68AFD3967952, 0x368DADfc4B19572D724C98A65a194314066ddA33 on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "30.123",
+        "token": "WETH",
+        "receiver": "0x436f795B64E23E6cE7792af4923A68AFD3967952"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "30.123",
+        "token": "WETH",
+        "receiver": "0x368DADfc4B19572D724C98A65a194314066ddA33"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 1 USDC and 0.1 PEPE to each of the following addresses: 0x91fc77f14e0f8f8394675a7cC05e1A0885aEBBf7, 0xd3592EF50f130A7E79c728811F24c346De42fE4d on Polygon.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Polygon",
+        "amount": "1",
+        "token": "USDC",
+        "receiver": "0x91fc77f14e0f8f8394675a7cC05e1A0885aEBBf7"
+      },
+      {
+        "action": "transfer",
+        "chain": "Polygon",
+        "amount": "1",
+        "token": "USDC",
+        "receiver": "0xd3592EF50f130A7E79c728811F24c346De42fE4d"
+      },
+      {
+        "action": "transfer",
+        "chain": "Polygon",
+        "amount": "0.1",
+        "token": "PEPE",
+        "receiver": "0x91fc77f14e0f8f8394675a7cC05e1A0885aEBBf7"
+      },
+      {
+        "action": "transfer",
+        "chain": "Polygon",
+        "amount": "0.1",
+        "token": "PEPE",
+        "receiver": "0xd3592EF50f130A7E79c728811F24c346De42fE4d"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 1 USDC and 20 PEPE to each of the following addresses: apple.eth, hello.eth on Scroll.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "1",
+        "token": "USDC",
+        "receiver": "apple.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "1",
+        "token": "USDC",
+        "receiver": "hello.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "20",
+        "token": "PEPE",
+        "receiver": "apple.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Scroll",
+        "amount": "20",
+        "token": "PEPE",
+        "receiver": "hello.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to give my friend '0xC1fA39EBe0B8A602b47DA65B9750b178bABd0d11' 0.01233 BABY on Blast",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Blast",
+        "amount": "0.003",
+        "token": "BABY",
+        "receiver": "0xC1fA39EBe0B8A602b47DA65B9750b178bABd0d11"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 0.003 USDC and 0.6 UNI to APPLE.ETH on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.003",
+        "token": "USDC",
+        "receiver": "APPLE.ETH"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "0.6",
+        "token": "UNI",
+        "receiver": "APPLE.ETH"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to send 12 ETH to trump.eth & 11 USDT to biden.eth on Ethereum",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "12",
+        "token": "ETH",
+        "receiver": "trump.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "11",
+        "token": "ETH",
+        "receiver": "biden.eth"
+      }
+    ]
+  }
+]
