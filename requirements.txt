@@ -10,3 +10,4 @@ scipy
 tenacity
 tiktoken
 urllib3
+web3
