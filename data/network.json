@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "ethereum",
+    "rpc_url": "https://mainnet.infura.io/v3/{infura_api_key}"
+  },
+  {
+    "id": 10,
+    "name": "optimism",
+    "rpc_url": "https://optimism-mainnet.infura.io/v3/{infura_api_key}"
+  },
+  {
+    "id": 137,
+    "name": "polygon",
+    "rpc_url": "https://polygon-mainnet.infura.io/v3/{infura_api_key}"
+  },
+  {
+    "id": 42161,
+    "name": "arbitrum",
+    "rpc_url": "https://arbitrum-mainnet.infura.io/v3/{infura_api_key}"
+  },
+  {
+    "id": 81457,
+    "name": "blast",
+    "rpc_url": "https://blast-mainnet.infura.io/v3/{infura_api_key}"
+  },
+  {
+    "id": 534352,
+    "name": "scroll",
+    "rpc_url": "https://rpc.scroll.io/"
+  }
+]
