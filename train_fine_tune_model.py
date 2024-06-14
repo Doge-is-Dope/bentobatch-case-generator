@@ -73,7 +73,7 @@ def start_fine_tuning(file_ids: list[str]) -> list[str]:
 
 
 if __name__ == "__main__":
-    directory = "fine-tuning"
+    directory = "data/fine-tuning"
     path_list = get_fine_tuning_files(directory)
     print(f"Found {len(path_list)} files for processing.")
 
