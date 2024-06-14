@@ -1,6 +1,6 @@
 import glob
 import json
-from openai import OpenAI, fine_tuning
+from openai import OpenAI
 import os
 
 

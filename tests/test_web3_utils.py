@@ -10,7 +10,7 @@ class TestWeb3Utils(unittest.TestCase):
 
     def test_encode_transfer(self):
         result = self.erc20_utils.encode_erc20_transfer(
-            token="0x8E50bf47FF159b19C808D15E6eDFf57Dee6e9B44",
+            contract_addr="0x8E50bf47FF159b19C808D15E6eDFf57Dee6e9B44",
             recipient="0x00e5DF023726d46F689F157E29d2586FCE0Ca1eD",
             amount=1000000,
         )

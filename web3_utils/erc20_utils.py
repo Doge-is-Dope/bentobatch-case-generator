@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from web3 import Web3
 
+from model.erc20_token import Erc20Token
 from utils import data_utils
 
 ERC20 = "erc20"
@@ -30,7 +31,7 @@ class ERC20Utils:
         contract_address = self.w3.to_checksum_address(contract_address)
         return self.w3.eth.contract(address=contract_address, abi=abi)
 
-    def get_token_info(self, token: str):
+    def get_token_info(self, token: str) -> Erc20Token:
         """
         Get token information
         """
@@ -38,7 +39,9 @@ class ERC20Utils:
         name = contract.functions.name().call()
         symbol = contract.functions.symbol().call()
         decimals = contract.functions.decimals().call()
-        return name, symbol, decimals
+        return Erc20Token(
+            contract_addr=token, name=name, symbol=symbol, decimals=decimals
+        )
 
     def validate_erc20_transfer(
         self, token: str, account: str, recipient: str, amount: int
@@ -53,9 +56,16 @@ class ERC20Utils:
         balance = contract.functions.balanceOf(account).call()
         print(balance)
 
-    def encode_erc20_transfer(self, token: str, recipient: str, amount: int) -> str:
+    def encode_erc20_transfer(
+        self, contract_addr: str, recipient: str, amount: int
+    ) -> str:
         """
         Encode data for ERC20 transfer
         """
-        contract = self.__get_contract_instance(ERC20, token)
+        if not self.w3.is_address(contract_addr):
+            raise ValueError(f"Invalid contract address: {contract_addr}")
+        if not self.w3.is_address(recipient):
+            raise ValueError(f"Invalid recipient address: {recipient}")
+
+        contract = self.__get_contract_instance(ERC20, contract_addr)
         return contract.encode_abi(fn_name="transfer", args=[recipient, amount])

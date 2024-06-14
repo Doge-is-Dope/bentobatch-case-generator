@@ -1,6 +1,5 @@
 from enum import Enum, unique
 import json
-from os import name
 from model.network import Network
 
 

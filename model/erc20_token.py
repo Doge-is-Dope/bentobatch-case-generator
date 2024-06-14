@@ -1,8 +1,9 @@
-class ERC20Token:
-    def __init__(self, name, symbol, contract_addr):
+class Erc20Token:
+    def __init__(self, contract_addr, name, symbol, decimals):
+        self.contract_addr = contract_addr
         self.name = name
         self.symbol = symbol
-        self.contract_addr = contract_addr
+        self.decimals = decimals
 
     def __str__(self):
-        return f"ERC20Token(name={self.name}, symbol={self.symbol}, contract_addr={self.contract_addr})"
+        return f"Erc20Token=(Contract address: {self.contract_addr}, Name: {self.name}, Symbol: {self.symbol}, Decimals: {self.decimals})"
