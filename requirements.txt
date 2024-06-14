@@ -3,6 +3,7 @@ matplotlib
 numpy
 openai
 pandas
+python-dotenv
 regex
 requests
 scikit-learn
