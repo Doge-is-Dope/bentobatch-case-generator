@@ -9,10 +9,17 @@ from sklearn.metrics import average_precision_score, precision_recall_curve
 from openai import OpenAI
 import numpy as np
 import pandas as pd
+from tenacity import (
+    retry,
+    wait_random_exponential,
+    stop_after_attempt,
+)  # for retrying API calls
 
 client = OpenAI(max_retries=5)
 
 
+# Retry up to 6 times with exponential backoff, starting at 1 second and maxing out at 20 seconds delay
+@retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
 def get_embedding(text: str, model="text-embedding-3-small", **kwargs) -> List[float]:
     # replace newlines, which can negatively affect performance.
     text = text.replace("\n", " ")
@@ -33,6 +40,7 @@ async def aget_embedding(
     ][0]["embedding"]
 
 
+@retry(wait=wait_random_exponential(min=1, max=20), stop=stop_after_attempt(6))
 def get_embeddings(
     list_of_text: List[str], model="text-embedding-3-small", **kwargs
 ) -> List[List[float]]:

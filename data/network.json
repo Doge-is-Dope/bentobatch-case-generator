@@ -15,9 +15,19 @@
     "rpc_url": "https://polygon-mainnet.infura.io/v3/{infura_api_key}"
   },
   {
+    "id": 8453,
+    "name": "base",
+    "rpc_url": "https://mainnet.base.org"
+  },
+  {
     "id": 42161,
     "name": "arbitrum",
     "rpc_url": "https://arbitrum-mainnet.infura.io/v3/{infura_api_key}"
+  },
+  {
+    "id": 59144,
+    "name": "linea",
+    "rpc_url": "https://linea-mainnet.infura.io/v3/{infura_api_key}"
   },
   {
     "id": 81457,

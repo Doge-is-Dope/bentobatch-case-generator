@@ -1,0 +1,1 @@
+python -m utils.cmc_utils

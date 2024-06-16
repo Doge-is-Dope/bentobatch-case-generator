@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from eth_typing import ChecksumAddress
 from web3 import Web3
 
 from model.erc20_token import Erc20Token
@@ -43,21 +44,8 @@ class ERC20Utils:
             contract_addr=token, name=name, symbol=symbol, decimals=decimals
         )
 
-    def validate_erc20_transfer(
-        self, token: str, account: str, recipient: str, amount: int
-    ):
-        """
-        Validate ERC20 transfer by checking if the sender:
-        - has enough balance
-        - Normalize amount by decimals
-        - Normalize recipient address by checksum and ENS
-        """
-        contract = self.__get_contract_instance(ERC20, token)
-        balance = contract.functions.balanceOf(account).call()
-        print(balance)
-
     def encode_erc20_transfer(
-        self, contract_addr: str, recipient: str, amount: int
+        self, contract_addr: str, recipient: str | ChecksumAddress, amount: int
     ) -> str:
         """
         Encode data for ERC20 transfer

@@ -1,2 +1,2 @@
 pip install -r requirements.txt
-python utils/cmc_utils.py
+./scripts/update_erc20_tokens.sh
