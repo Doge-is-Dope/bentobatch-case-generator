@@ -26,7 +26,11 @@ class DataUtils:
 
         return {
             item[key]: Network(
-                id=item["id"], name=item["name"], rpc_url=item["rpc_url"]
+                id=item["id"],
+                name=item["name"],
+                rpc_url=item["rpc_url"],
+                symbol=item["symbol"],
+                decimals=item["decimals"],
             )
             for item in json_content
         }

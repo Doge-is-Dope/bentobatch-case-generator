@@ -1,6 +1,7 @@
 import pandas as pd
 import ast
 import numpy as np
+from .data_utils import DataUtils
 from .embeddings_utils import get_embedding, cosine_similarity
 
 
@@ -31,6 +32,20 @@ class TokenSearcher:
         return result
 
     def _search_token_offline(self, query: str, chain: str | None) -> dict | None:
+        # Check if the query is a native token
+        if chain is not None:
+            chain = chain.lower()
+            network = DataUtils().get_network_info_by_name(chain)
+            if network is not None and query.lower() == network.symbol.lower():
+                return {
+                    "id": 0,
+                    "name": network.name,
+                    "symbol": network.symbol,
+                    "decimals": network.decimals,
+                    "network": network.name,
+                    "contract_address": None,
+                }
+
         # Load the CSV file
         df = pd.read_csv("processed/embeddings/erc20_tokens.csv")
 

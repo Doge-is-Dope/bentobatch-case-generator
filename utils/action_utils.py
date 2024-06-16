@@ -1,7 +1,7 @@
 import json
-from unittest import result
 from web3_utils.ens_utils import resolve_ens
 from web3_utils.erc20_utils import ERC20Utils
+from .data_utils import DataUtils
 from .token_searcher import TokenSearcher
 
 
@@ -56,17 +56,26 @@ def _shorten_address(receiver: str, n: int = 6) -> str:
 
 def _get_transfer_action(action: dict) -> str:
     try:
-        chain = action["chain"]
+        user_chain = action["chain"]  # user input chain
         user_amount = action["amount"]  # user input amount
         user_token = action["token"]  # user input token
-        receiver = action["receiver"]
+        user_receiver = action["receiver"]
+
+        # Resolve the chain
+        chain = user_chain.strip()
+        network = DataUtils().get_network_info_by_name(chain)
+        if network is None:
+            return InvalidArgumentError(f"Unsupported chain: {chain.title()}").to_json()
+        else:
+            chain = network.name
 
         # Resolve the receiver
-        if receiver.endswith(".eth"):
-            resolved_addr = resolve_ens(receiver)
+        receiver = user_receiver.strip()
+        if user_receiver.endswith(".eth"):
+            resolved_addr = resolve_ens(user_receiver)
             if resolved_addr is None:
                 return InvalidArgumentError(
-                    error=f"Invalid recipient: {receiver}"
+                    error=f"Invalid recipient: {user_receiver}"
                 ).to_json()
             receiver = resolved_addr
 
@@ -83,28 +92,40 @@ def _get_transfer_action(action: dict) -> str:
                 ).to_json()
             else:
                 return TokenNotFoundError(
-                    f"{user_token} is not found on {chain}."
+                    f"{user_token} is not found on {chain.title()}."
                 ).to_json()
 
         assert suggested_token is not None
-
         token_symbol = suggested_token["symbol"]
         token_decimals = int(suggested_token["decimals"])
-        amount = int(float(user_amount) * 10**token_decimals)
-        contract_address = suggested_token["contract_address"]
+        token_addr = suggested_token["contract_address"]
+        token_amount = int(float(user_amount) * 10**token_decimals)
+        description = f"Transfer {user_amount} {token_symbol} to {_shorten_address(receiver)} on {chain.title()}"
 
-        # Resolve the data
-        token_utils = ERC20Utils()
-        data = token_utils.encode_erc20_transfer(contract_address, receiver, amount)
+        # If the token address is None, it is a native token
+        if token_addr is None:
+            return ActionResponse(
+                action="transfer",
+                description=description,
+                chain=chain,
+                to=receiver,
+                value=str(token_amount),
+                data="0x",
+            ).to_json()
+        else:
+            # Resolve the data
+            token_utils = ERC20Utils()
+            data = token_utils.encode_erc20_transfer(token_addr, receiver, token_amount)
 
-        response = ActionResponse(
-            description=f"Transfer {user_amount} {token_symbol} to {_shorten_address(receiver)} on {chain}",
-            to=contract_address,
-            value="0",
-            data=data,
-        )
+            return ActionResponse(
+                action="transfer",
+                description=description,
+                chain=chain,
+                to=token_addr,
+                value="0",
+                data=data,
+            ).to_json()
 
-        return response.to_json()
     except Exception as e:
         return InvalidArgumentError(error=str(e)).to_json()
 
@@ -136,28 +157,36 @@ class TokenNotFoundError(_ActionError):
 class ActionResponse:
     def __init__(
         self,
-        description: str | None = None,
-        to: str | None = None,
-        value: str | None = None,
-        data: str | None = None,
+        action: str,
+        description: str,
+        chain: str,
+        to: str,
+        value: str,
+        data: str,
     ):
+        self.action = action
         self.description = description
+        self.chain = chain
         self.to = to
         self.value = value
         self.data = data
 
     def __str__(self):
         attributes = [
+            f"action: {self.action}",
             f"description: {self.description}",
-            f"to: {self.to}" if self.to is not None else None,
-            f"value: {self.value}" if self.value is not None else None,
-            f"data: {self.data}" if self.data is not None else None,
+            f"chain: {self.chain}",
+            f"to: {self.to}",
+            f"value: {self.value}",
+            f"data: {self.data}",
         ]
         return "\n".join(attr for attr in attributes if attr is not None)
 
     def to_json(self) -> str:
         data = {
+            "action": self.action,
             "description": self.description,
+            "chain": self.chain,
             "to": self.to,
             "value": self.value,
             "data": self.data,
