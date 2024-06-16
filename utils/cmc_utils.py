@@ -35,6 +35,8 @@ def fetch_cmc_map(supported_chains: set[str], top_n: int = 5000) -> list[int]:
     Returns:
     set: A set of token ids.
     """
+    if top_n > 5000:
+        raise ValueError("Maximum top_n is 5000.")  # For demo purposes
     # Fetch the token map
     url = f"{CMC_BASE_URL}/cryptocurrency/map"
     parameters = {"aux": "platform", "sort": "cmc_rank", "limit": top_n}
@@ -42,7 +44,7 @@ def fetch_cmc_map(supported_chains: set[str], top_n: int = 5000) -> list[int]:
     response = requests.get(url, headers=headers, params=parameters)
     response.raise_for_status()
     data = response.json()["data"]
-
+    print(f"{len(data)} tokens.")
     ids = set()  # token which are already saved
 
     # Save the token map to a CSV file
@@ -196,7 +198,7 @@ if __name__ == "__main__":
     # Get supported chains
     chain_names = _get_supported_chains()
     # Fetch CMC crypto map
-    ids = fetch_cmc_map(chain_names)
+    ids = fetch_cmc_map(chain_names, top_n=1000)
     # Fetch tokens by ids
     fetch_cmc_tokens(chain_names)
     # Get embeddings
