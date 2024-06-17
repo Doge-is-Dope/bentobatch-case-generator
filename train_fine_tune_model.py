@@ -77,7 +77,7 @@ if __name__ == "__main__":
     path_list = get_fine_tuning_files(directory)
     print(f"Found {len(path_list)} files for processing.")
 
-    # Process each fine-tuning file
+    # Process each fine-tuning file to JSONL format
     for path in path_list:
         process_fine_tuning(path)
 

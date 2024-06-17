@@ -1,0 +1,1601 @@
+[
+  {
+    "prompt": "Please approve 10 USDC to vitalik.eth on Ethereum",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve vitalik.eth to spend 10 UNI on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "10",
+        "token": "UNI",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve 100 USDT for spending to 0xbB7E4818d6703b7fdc3Fc886e96809C57D91159A on Base.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Base",
+        "amount": "100",
+        "token": "USDT",
+        "spender": "0xbB7E4818d6703b7fdc3Fc886e96809C57D91159A"
+      }
+    ]
+  },
+  {
+    "prompt": "Please approve 50 wBTC for transfer to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me approve 10 ETH for spending to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Optimism?",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve 1123.11 DAI spending to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "1123.11",
+        "token": "DAI",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you help me approve 500 USDT for transfer to 0x1234567890123456789012345678901234567890 on Starknet?",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Starknet",
+        "amount": "500",
+        "token": "USDT",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve 5 USDC spending to 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on OP.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "5",
+        "token": "USDC",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve 50 DAI for spending to 0xabcdef0123456789abcdef0123456789abcdef01 on Starknet.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Starknet",
+        "amount": "50",
+        "token": "DAI",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "Please approve 1000 USDC for transfer to 0x9876543210987654321098765432109876543210 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "1000",
+        "token": "USDC",
+        "spender": "0x9876543210987654321098765432109876543210"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you assist me in approving 2000 wBTC for spending to clement.eth on OP?",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "2000",
+        "token": "wBTC",
+        "spender": "clement.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve 500 UNI for transfer to doge.eth on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "500",
+        "token": "UNI",
+        "spender": "doge.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me approve 100 LINK for spending to 0x9876543210ABCDEF09876543210ABCDEF09876543 on OP.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me approve 100 LINK and 10 USDC for spending to 0x9876543210ABCDEF09876543210ABCDEF09876543 on OP.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      },
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me approve 100 LINK to 0x9876543210ABCDEF09876543210ABCDEF09876543 and 123 USDC to doge.eth on OP.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      },
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "123",
+        "token": "USDC",
+        "spender": "doge.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Can you guide me through approving 200 ETH for transfer to 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism?",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "200",
+        "token": "ETH",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve 1000 USDT for spending to 0x1234567890ABCDEFABCDEF1234567890ABCDEFAB on Starknet.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Starknet",
+        "amount": "1000",
+        "token": "USDT",
+        "spender": "0x1234567890ABCDEFABCDEF1234567890ABCDEFAB"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve 5 USDT for spending to dog.eth and approve 3 to cat.eth on Starknet.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Starknet",
+        "amount": "5",
+        "token": "USDT",
+        "spender": "dog.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Starknet",
+        "amount": "3",
+        "token": "USDT",
+        "spender": "cat.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to approve the transfer of 1000 USDC to the address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "1000",
+        "token": "USDC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve spending 200 ETH to send to 0x1234567890123456789012345678901234567890 on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "200",
+        "token": "ETH",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow transferring 50 wBTC to 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on OP.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "OP",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the spending of 1.23 DAI to be sent to cat.eth on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "1.23",
+        "token": "DAI",
+        "spender": "cat.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to grant permission to transfer 500 LINK to the account with address 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "LINK",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to grant permission to transfer 500 LINK to the account with address 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism and 100 USDC to 0x1234567890123456789012345678901234567890 on Starknet.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "LINK",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      },
+      {
+        "action": "approve",
+        "chain": "Starknet",
+        "amount": "100",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the spending of 50 ETH to send it to the address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Authorize the transfer of 1000 USDC to the destination address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "1000",
+        "token": "USDC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to send 200 ETH to the designated wallet 0x1234567890123456789012345678901234567890 on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "200",
+        "token": "ETH",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the transfer of 50 wBTC to the specified recipient 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant the ability to transfer 100 DAI to the provided address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Naruto.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Naruto",
+        "amount": "100",
+        "token": "DAI",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Authorize the spending of 500 LINK to be sent to the account with address 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "LINK",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the transfer of 1000 USDT to the wallet 0x1234567890123456789012345678901234567890 on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "1000",
+        "token": "USDT",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to send 50 ETH to the address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the transfer of 5000 USDC to the account with address 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "5000",
+        "token": "USDC",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve 1000 wBTC for spending to 0x1234567890ABCDEFABCDEF1234567890ABCDEFAB on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "1000",
+        "token": "wBTC",
+        "spender": "0x1234567890ABCDEFABCDEF1234567890ABCDEFAB"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 200 DAI to 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "200",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve the spending of 50 ETH to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Vitalik.eth can spend my 10 USDC on Optimism; I want to approve it.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "To spend my 10 USDC on Optimism, vitalik.eth needs my approval, which I want to give.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I wish to give vitalik.eth access to my 10 USDC on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "My intention is to permit vitalik.eth to use 10 USDC on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "The 10 USDC on Optimism will be accessible to vitalik.eth once I approve it.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "My goal is to approve vitalik.eth to spend 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I intend to let vitalik.eth use my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to authorize vitalik.eth to access my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I intend to allow vitalik.eth to utilize my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to allow vitalik.eth to use 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "My plan is to let vitalik.eth use my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to give permission to vitalik.eth to use my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "My 10 USDC on Arbitrum is for vitalik.eth to use, and I want to approve this.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I'm looking to give doge.eth permission to spend my 1123 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "1123",
+        "token": "USDC",
+        "spender": "doge.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I'm ready to authorize vitalik.eth to spend 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Please approve the transfer of 100 LINK to 0x9876543210ABCDEF09876543210ABCDEF09876543 on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the spending of 2000 USDT to be sent to 0x1234567890123456789012345678901234567890 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 50 wBTC to the address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "I need to grant permission for the transfer of 5000 USDC to the account with address 0x1234567890123456789012345678901234567890 on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "5000",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the spending of 1000 wBTC to the recipient with address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "1000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 200 DAI to the wallet 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Taiko.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Taiko",
+        "amount": "200",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Give 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 permission to spend 200 USDC on Taiko.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Taiko",
+        "amount": "200",
+        "token": "USDC",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to allow doge.eth to utilize my 123 UNI on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "123",
+        "token": "UNI",
+        "spender": "doge.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to allow doge.eth and cate.eth to utilize my 123 UNI on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "123",
+        "token": "UNI",
+        "spender": "doge.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "123",
+        "token": "UNI",
+        "spender": "cate.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve the transfer of 50 ETH to the address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Please assist me in approving the spending of 100 LINK to the account 0x9876543210ABCDEF09876543210ABCDEF09876543 on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the transfer of 2000 USDT to the recipient with address 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission for the transfer of 50 wBTC to the wallet 0x1234567890123456789012345678901234567890 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to send 500 USDC to the account 0x1234567890123456789012345678901234567890 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "500",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve the transfer of 1000 wBTC to the recipient address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "1000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Please assist me in granting permission to transfer 200 DAI to the wallet with address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "200",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the spending of 50 ETH to be transferred to the address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve the transfer of 100 LINK to the recipient with the Ethereum address 0x9876543210ABCDEF09876543210ABCDEF09876543.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me approve the spending of 2000 USDT to be transferred to the wallet address 0xabcdef0123456789abcdef0123456789abcdef01 on Base.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Base",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 50 wBTC to the Ethereum wallet with the address 0x1234567890123456789012345678901234567890.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I'm giving vitalik.eth the green light to spend my 50 wBTC on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to give vitalik.eth the ability to spend my 50 DOGE on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "50",
+        "token": "DOGE",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the transfer of 500 USDC to the account with the Ethereum address 0x1234567890123456789012345678901234567890.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "500",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Hello! I would like to grant permission for the transfer of 1000 wBTC to the wallet with the address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Hi, please assist me in approving the spending of 200 DAI to be transferred to the address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "200",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Hi, I want to grant address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 to spend my 10 DAI on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "10",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "Hi, I want to grant address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 to spend my 10 DAI and allow vitalik.eth to use my 100 USDC on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "10",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      },
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "100",
+        "token": "USDC",
+        "spender": "vitalik.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve doge.eth, cate.eth, and 0x9fD042a18E90Ce326073fA70F111DC9D798D9a52 to spend my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "doge.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "cate.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "0x9fD042a18E90Ce326073fA70F111DC9D798D9a52"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the transfer of 50 ETH to the recipient with the address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve the transfer of 100 LINK to the Ethereum address 0x9876543210ABCDEF09876543210ABCDEF09876543.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Please help me approve the spending of 2000 USDT to be transferred to the wallet with the address 0xabcdef0123456789abcdef0123456789abcdef01 on Base.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Base",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 50 wBTC to the address 0x1234567890123456789012345678901234567890 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Please approve the spending of 5000 USDC to be transferred to the Ethereum address 0x1234567890123456789012345678901234567890.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "5000",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to authorize the transfer of 1000 wBTC to the wallet address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission for the transfer of 200 DAI to the recipient address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "200",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve the spending of 50 ETH to be transferred to the account with the Ethereum address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Please assist me in approving the transfer of 100 LINK to the account with the address 0x9876543210ABCDEF09876543210ABCDEF09876543 on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the spending of 2000 USDT to be transferred to the wallet with the Ethereum address 0xabcdef0123456789abcdef0123456789abcdef01 on Base.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Base",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I wish to authorize doge.eth, cate.eth, and 0x9fD042a18E90Ce326073fA70F111DC9D798D9a52 to use my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "doge.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "cate.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "0x9fD042a18E90Ce326073fA70F111DC9D798D9a52"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 50 wBTC to the wallet with the Ethereum address 0x1234567890123456789012345678901234567890 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Please approve the transfer of 5000 USDC to the Ethereum address 0x1234567890123456789012345678901234567890.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "5000",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to grant permission for the transfer of 1000 wBTC to the wallet with the address 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to approve the spending of 50 ETH to be transferred to the account with the address 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to allow doge.eth, cate.eth, and 0x9fD042a18E90Ce326073fA70F111DC9D798D9a52 to utilize my 10 USDC on Arbitrum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "doge.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "cate.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "0x9fD042a18E90Ce326073fA70F111DC9D798D9a52"
+      }
+    ]
+  },
+  {
+    "prompt": "Allow the spending of 2000 USDT to be transferred to the wallet with the address 0xabcdef0123456789abcdef0123456789abcdef01 on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve alice.eth to spend 10 USDC and bob.eth to spend 5 USDT on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "10",
+        "token": "USDC",
+        "spender": "alice.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "5",
+        "token": "USDT",
+        "spender": "bob.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve lucas.eth to spend 25 USDT on Avalanche and mia.eth to spend 20 USDC on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Avalanche",
+        "amount": "25",
+        "token": "USDT",
+        "spender": "lucas.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "20",
+        "token": "USDC",
+        "spender": "mia.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve charlie.eth to spend 20 UNI and dave.eth to spend 15 USDC on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "20",
+        "token": "UNI",
+        "spender": "charlie.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "15",
+        "token": "USDC",
+        "spender": "dave.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve emma.eth to spend 30 USDT and frank.eth to spend 25 UNI on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "30",
+        "token": "USDT",
+        "spender": "emma.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "25",
+        "token": "UNI",
+        "spender": "frank.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve george.eth to spend 40 USDC and hannah.eth to spend 35 USDT on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "40",
+        "token": "USDC",
+        "spender": "george.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "35",
+        "token": "USDT",
+        "spender": "hannah.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve isabel.eth to spend 50 UNI and jack.eth to spend 45 USDC on Blast.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "50",
+        "token": "UNI",
+        "spender": "isabel.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Blast",
+        "amount": "45",
+        "token": "USDC",
+        "spender": "jack.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant permission to transfer 50 wBTC to the wallet with the address 0x1234567890123456789012345678901234567890 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve emily.eth to spend 55 USDT on Arbitrum and daniel.eth to spend 50 USDC on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Arbitrum",
+        "amount": "55",
+        "token": "USDT",
+        "spender": "emily.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "50",
+        "token": "USDC",
+        "spender": "daniel.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Authorize the transfer of 1000 USDC tokens to 0x1234567890123456789012345678901234567890 on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I approve the spending of 500 DAI tokens to be transferred to the recipient 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "500",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I would like to give permission to transfer 2000 wBTC tokens to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Gnosis.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Gnosis",
+        "amount": "2000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the spending of 50 ETH tokens for transfer to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Please authorize the transfer of 100 LINK tokens to the account with address 0x9876543210ABCDEF09876543210ABCDEF09876543 on Gnosis.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Gnosis",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant the ability to spend 2000 USDT tokens to 0xabcdef0123456789abcdef0123456789abcdef01 on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the transfer of 50 wBTC tokens for spending to the wallet with address 0x1234567890123456789012345678901234567890 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "50",
+        "token": "wBTC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "Please approve the transfer of 1000 USDC tokens to the Ethereum address 0x1234567890123456789012345678901234567890.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "1000",
+        "token": "USDC",
+        "spender": "0x1234567890123456789012345678901234567890"
+      }
+    ]
+  },
+  {
+    "prompt": "I'd like to approve address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 the access to 10 UNI on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "UNI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I authorize the spending of 500 DAI tokens to be transferred to the recipient address 0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456 on Chiado.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Chiado",
+        "amount": "500",
+        "token": "DAI",
+        "spender": "0xA1B2C3D4E5F6aBcDef1234567890aBcDEf123456"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve morgan.eth to spend 70 USDC and nancy.eth to spend 65 USDT on Optimism.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "70",
+        "token": "USDC",
+        "spender": "morgan.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Optimism",
+        "amount": "65",
+        "token": "USDT",
+        "spender": "nancy.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "I hereby grant permission for the transfer of 2000 wBTC tokens to 0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef on Base.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Base",
+        "amount": "2000",
+        "token": "wBTC",
+        "spender": "0xabcdefABCDEFabcdefABCDEFabcdefABCDEFabcdef"
+      }
+    ]
+  },
+  {
+    "prompt": "Approve the spending of 50 ETH tokens to be transferred to 0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF on Polygon.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "50",
+        "token": "ETH",
+        "spender": "0xABCDEFABCDEFabcdefabcdefabcdefABCDEFABCDEF"
+      }
+    ]
+  },
+  {
+    "prompt": "Please authorize the transfer of 100 LINK tokens to the account with the address 0x9876543210ABCDEF09876543210ABCDEF09876543 on Base.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Base",
+        "amount": "100",
+        "token": "LINK",
+        "spender": "0x9876543210ABCDEF09876543210ABCDEF09876543"
+      }
+    ]
+  },
+  {
+    "prompt": "Grant the ability to spend 2000 USDT tokens to the wallet with the address 0xabcdef0123456789abcdef0123456789abcdef01 on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "0xabcdef0123456789abcdef0123456789abcdef01"
+      }
+    ]
+  },
+  {
+    "prompt": "I want to approve james.eth to spend 15 USDC on Polygon and lily.eth to spend 10 UNI on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Polygon",
+        "amount": "15",
+        "token": "USDC",
+        "spender": "james.eth"
+      },
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "10",
+        "token": "UNI",
+        "spender": "lily.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Let vitalik.eth use 2000 USDT tokens on Ethereum.",
+    "completion": [
+      {
+        "action": "approve",
+        "chain": "Ethereum",
+        "amount": "2000",
+        "token": "USDT",
+        "spender": "vitalik.eth"
+      }
+    ]
+  }
+]
