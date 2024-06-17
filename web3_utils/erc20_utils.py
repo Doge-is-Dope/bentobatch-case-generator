@@ -57,3 +57,17 @@ class ERC20Utils:
 
         contract = self.__get_contract_instance(ERC20, contract_addr)
         return contract.encode_abi(fn_name="transfer", args=[recipient, amount])
+
+    def encode_erc20_approve(
+        self, contract_addr: str, spender: str | ChecksumAddress, amount: int
+    ) -> str:
+        """
+        Encode data for ERC20 approve
+        """
+        if not self.w3.is_address(contract_addr):
+            raise ValueError(f"Invalid contract address: {contract_addr}")
+        if not self.w3.is_address(spender):
+            raise ValueError(f"Invalid spender address: {spender}")
+
+        contract = self.__get_contract_instance(ERC20, contract_addr)
+        return contract.encode_abi(fn_name="approve", args=[spender, amount])
