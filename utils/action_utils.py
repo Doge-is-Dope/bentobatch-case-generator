@@ -71,11 +71,11 @@ def _get_transfer_action(action: dict, desc: str) -> str:
         network = _resolve_chain(user_chain)
         if network is None:
             return InvalidArgumentError(f"Unsupported chain: {user_chain}").to_json()
-        else:
-            chain = network.name
 
         # Resolve the receiver
-        receiver = _resolve_receiver(user_receiver, "transfer", user_token, chain)
+        receiver = _resolve_receiver(
+            user_receiver, "transfer", user_token, network.name
+        )
         if receiver is None:
             return InvalidArgumentError(
                 error=f"Invalid recipient: {user_receiver}"
@@ -83,7 +83,7 @@ def _get_transfer_action(action: dict, desc: str) -> str:
 
         # Resolve the token
         token_searcher = TokenSearcher()
-        search_result = token_searcher.search_token(user_token, chain)
+        search_result = token_searcher.search_token(user_token, network.name)
         suggested_token = search_result["suggested"]
         optional_tokens = search_result["other_options"]
         optional_token_symbols = [token["symbol"] for token in optional_tokens]
@@ -94,7 +94,7 @@ def _get_transfer_action(action: dict, desc: str) -> str:
                 ).to_json()
             else:
                 return TokenNotFoundError(
-                    f"{user_token} is not found on {chain.title()}."
+                    f"{user_token} is not found on {network.name.title()}."
                 ).to_json()
 
         assert suggested_token is not None
@@ -106,7 +106,7 @@ def _get_transfer_action(action: dict, desc: str) -> str:
             amount=user_amount,
             token=token_symbol,
             receiver=_shorten_address(receiver),
-            chain=chain.title(),
+            chain=network.name.title(),
         )
 
         # If the token address is None, it is a native token
@@ -114,7 +114,7 @@ def _get_transfer_action(action: dict, desc: str) -> str:
             return ActionResponse(
                 action="transfer",
                 description=description,
-                chain=chain,
+                chain={"chain_id": network.id, "name": network.name},
                 to=receiver,
                 value=str(token_amount),
                 data="0x",
@@ -127,7 +127,7 @@ def _get_transfer_action(action: dict, desc: str) -> str:
             return ActionResponse(
                 action="transfer",
                 description=description,
-                chain=chain,
+                chain={"chain_id": network.id, "name": network.name},
                 to=token_addr,
                 value="0",
                 data=data,
@@ -148,11 +148,9 @@ def _get_approve_action(action: dict, desc: str) -> str:
         network = _resolve_chain(user_chain)
         if network is None:
             return InvalidArgumentError(f"Unsupported chain: {user_chain}").to_json()
-        else:
-            chain = network.name
 
         # Resolve the spender
-        spender = _resolve_receiver(user_spender, "approve", user_token, chain)
+        spender = _resolve_receiver(user_spender, "approve", user_token, network.name)
         if spender is None:
             return InvalidArgumentError(
                 error=f"Invalid spender: {user_spender}"
@@ -160,7 +158,7 @@ def _get_approve_action(action: dict, desc: str) -> str:
 
         # Resolve the token
         token_searcher = TokenSearcher()
-        search_result = token_searcher.search_token(user_token, chain)
+        search_result = token_searcher.search_token(user_token, network.name)
         suggested_token = search_result["suggested"]
         optional_tokens = search_result["other_options"]
         optional_token_symbols = [token["symbol"] for token in optional_tokens]
@@ -171,7 +169,7 @@ def _get_approve_action(action: dict, desc: str) -> str:
                 ).to_json()
             else:
                 return TokenNotFoundError(
-                    f"{user_token} is not found on {chain.title()}."
+                    f"{user_token} is not found on {network.name.title()}."
                 ).to_json()
 
         assert suggested_token is not None
@@ -183,7 +181,7 @@ def _get_approve_action(action: dict, desc: str) -> str:
             amount=user_amount,
             token=token_symbol,
             spender=_shorten_address(spender),
-            chain=chain.title(),
+            chain=network.name.title(),
         )
 
         # If the token address is None, it is a native token
@@ -199,7 +197,7 @@ def _get_approve_action(action: dict, desc: str) -> str:
             return ActionResponse(
                 action="approve",
                 description=description,
-                chain=chain,
+                chain={"chain_id": network.id, "name": network.name},
                 to=token_addr,
                 value="0",
                 data=data,
@@ -278,7 +276,7 @@ class ActionResponse:
         self,
         action: str,
         description: str,
-        chain: str,
+        chain: dict[str, int | str],
         to: str,
         value: str,
         data: str,

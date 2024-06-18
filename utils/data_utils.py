@@ -40,7 +40,10 @@ class DataUtils:
         Get network info by name
         """
         supported_networks = self.__get_supported_networks(self.QueryFlag.BY_NAME)
-        return supported_networks.get(name.lower(), None)
+        matching_keys = [
+            key for key in supported_networks.keys() if name.lower() in str(key).lower()
+        ]
+        return supported_networks[matching_keys[0]] if matching_keys else None
 
     def get_network_info_by_id(self, id: int) -> Network | None:
         """
