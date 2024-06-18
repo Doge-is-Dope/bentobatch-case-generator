@@ -42,8 +42,12 @@ To update the protocol embeddings, execute the following command:
 $ ./scripts/update_protocols.sh
 ```
 
-To create the fine-tuning dataset, execute the following command:
+For fine-tuning-related, execute the following command:
 
 ```bash
-python train_fine_tuning_model.py
+# Train the fine-tuning model
+$ ./scripts/train_fine_tuning_model.sh
+
+# Check the fine-tuning status
+$ ./scripts/check_fine_tuning_status.sh
 ```
