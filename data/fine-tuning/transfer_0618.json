@@ -1,0 +1,382 @@
+[
+  {
+    "prompt": "Divide 10 USDC into two and transfer 5 USDC to biden.eth and 5 USDC to trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Split 10 USDC in half and send each half to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Distribute 10 USDC equally between biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 5 USDC to biden.eth and 5 USDC to trump.eth from the total 10 USDC on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Allocate 10 USDC, sending 5 USDC to biden.eth and 5 USDC to trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Divide 10 USDC evenly and send 5 USDC each to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Transfer half of 10 USDC to biden.eth and the other half to trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Split the 10 USDC fund and send equal parts to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Send 5 USDC to both biden.eth and trump.eth, splitting the 10 USDC on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Break down 10 USDC into two equal parts and send to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Take 10 USDC, divide it in two, and transfer to biden.eth and trump.eth equally on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Share 10 USDC equally between biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Distribute the 10 USDC equally, sending 5 USDC each to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Split the total 10 USDC in half and send to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Equally divide 10 USDC and send 5 USDC to biden.eth and 5 USDC to trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Send half of 10 USDC to biden.eth and the other half to trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Allocate 10 USDC equally, with 5 USDC going to biden.eth and 5 USDC to trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Divide 10 USDC equally and transfer to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Split the 10 USDC and send 5 USDC each to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  },
+  {
+    "prompt": "Equally divide the 10 USDC and send it to biden.eth and trump.eth on Ethereum.",
+    "completion": [
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "biden.eth"
+      },
+      {
+        "action": "transfer",
+        "chain": "Ethereum",
+        "amount": "5",
+        "token": "USDC",
+        "receiver": "trump.eth"
+      }
+    ]
+  }
+]
