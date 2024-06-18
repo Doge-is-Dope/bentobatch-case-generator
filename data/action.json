@@ -9,6 +9,6 @@
   },
   {
     "action": "swap",
-    "description": "You are about to swap {token_in_amount} {token_in_symbol} for {token_out_amount} {token_out_symbol} on {network}."
+    "description": "You are about to swap {token_in_amount} {token_in_symbol} for {token_out_amount} {token_out_symbol} on {chain}."
   }
 ]
