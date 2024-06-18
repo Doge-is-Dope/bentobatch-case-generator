@@ -8,23 +8,23 @@ class ProtocolSearcher:
 
     EMBEDDING_MODEL = "text-embedding-3-small"
 
-    def search_protocol(
-        self,
-        protocol: str,
-        chain: str | None,
-        other_options: bool = False,
-    ) -> dict:
-        result: dict = {"suggested": {}, "other_options": []}
-        chain = chain.lower() if chain is not None else None
-
+    def search_protocol(self, query: str) -> dict | None:
         search_result = [
             {"score": score, "id": id, "address": address}
-            for score, id, address in self._search_embeddings(f"{protocol}, {chain}")
+            for score, id, address in self._search_embeddings(query)
         ]
 
-        result["suggested"] = search_result[0]
-        result["other_options"] = search_result[1:]
+        suggested_protocol = search_result[0]
+        other_options = search_result[1:]
 
+        result = dict()
+        # For demo, return None if the highest score is less than 0.5
+        # The threshold is only used for text-embedding-3-small model and may not be applicable to other models
+        if suggested_protocol["score"] < 0.5:
+            return None
+
+        result["suggested"] = suggested_protocol
+        result["other_options"] = other_options
         return result
 
     def _search_embeddings(self, query):

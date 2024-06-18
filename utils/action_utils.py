@@ -1,8 +1,11 @@
 import json
-from web3_utils.ens_utils import resolve_ens
+
+from model.network import Network
+from web3_utils.ens_utils import resolve_ens, is_address
 from web3_utils.erc20_utils import ERC20Utils
 from .data_utils import DataUtils
 from .token_searcher import TokenSearcher
+from .protocol_searcher import ProtocolSearcher
 
 
 def get_supported_actions() -> dict[str, str]:
@@ -12,12 +15,12 @@ def get_supported_actions() -> dict[str, str]:
     file_path = "data/action.json"
     with open(file_path, "r") as file:
         json_content = json.load(file)
-    return {item["action"]: item["description"] for item in json_content}
+    return {item["name"]: item["description"] for item in json_content}
 
 
 def evaluate_response(response: str) -> list[str]:
     """
-    Evaluate a response from the GPT
+    Evaluate a generated response
     """
     actions = json.loads(response)
     results = []
@@ -65,22 +68,18 @@ def _get_transfer_action(action: dict, desc: str) -> str:
         user_receiver = action["receiver"]
 
         # Resolve the chain
-        chain = user_chain.strip()
-        network = DataUtils().get_network_info_by_name(chain)
+        network = _resolve_chain(user_chain)
         if network is None:
-            return InvalidArgumentError(f"Unsupported chain: {chain.title()}").to_json()
+            return InvalidArgumentError(f"Unsupported chain: {user_chain}").to_json()
         else:
             chain = network.name
 
         # Resolve the receiver
-        receiver = user_receiver.strip()
-        if user_receiver.endswith(".eth"):
-            resolved_addr = resolve_ens(user_receiver)
-            if resolved_addr is None:
-                return InvalidArgumentError(
-                    error=f"Invalid recipient: {user_receiver}"
-                ).to_json()
-            receiver = resolved_addr
+        receiver = _resolve_receiver(user_receiver, "transfer", user_token, chain)
+        if receiver is None:
+            return InvalidArgumentError(
+                error=f"Invalid recipient: {user_receiver}"
+            ).to_json()
 
         # Resolve the token
         token_searcher = TokenSearcher()
@@ -146,22 +145,18 @@ def _get_approve_action(action: dict, desc: str) -> str:
         user_spender = action["spender"]
 
         # Resolve the chain
-        chain = user_chain.strip()
-        network = DataUtils().get_network_info_by_name(chain)
+        network = _resolve_chain(user_chain)
         if network is None:
-            return InvalidArgumentError(f"Unsupported chain: {chain.title()}").to_json()
+            return InvalidArgumentError(f"Unsupported chain: {user_chain}").to_json()
         else:
             chain = network.name
 
         # Resolve the spender
-        spender = user_spender.strip()
-        if user_spender.endswith(".eth"):
-            resolved_addr = resolve_ens(user_spender)
-            if resolved_addr is None:
-                return InvalidArgumentError(
-                    error=f"Invalid spender: {user_spender}"
-                ).to_json()
-            spender = resolved_addr
+        spender = _resolve_receiver(user_spender, "approve", user_token, chain)
+        if spender is None:
+            return InvalidArgumentError(
+                error=f"Invalid spender: {user_spender}"
+            ).to_json()
 
         # Resolve the token
         token_searcher = TokenSearcher()
@@ -212,6 +207,46 @@ def _get_approve_action(action: dict, desc: str) -> str:
 
     except Exception as e:
         return InvalidArgumentError(error=str(e)).to_json()
+
+
+def _resolve_chain(text: str) -> Network | None:
+    """
+    Resolve the user input chain
+    Return the network info if the chain is supported; otherwise, return None
+    """
+    chain = text.strip()
+    return DataUtils().get_network_info_by_name(chain)
+
+
+def _resolve_receiver(raw_text: str, action: str, token: str, chain: str) -> str | None:
+    """
+    Resolve the receiver address
+    Parameters:
+        raw_text: str - The raw text of the receiver. e.g. "0x1234...5678", "alice.eth" or "AAVE"
+        action: str - The action type
+        token: str - The token symbol
+        chain: str - The chain name
+    Return:
+        the address if it is valid; otherwise, return None
+    """
+    text = raw_text.strip()
+    if text.endswith(".eth"):
+        resolved_addr = resolve_ens(text)
+        return resolved_addr
+    else:
+        if is_address(text):
+            return text
+        else:
+            return _resolve_protocol(action, token, chain)
+
+
+def _resolve_protocol(action: str, token: str, chain: str):
+    result = ProtocolSearcher().search_protocol(query=f"{action}, {token}, {chain}")
+    if result is None:
+        return None
+    print("Protocols: ", result)
+    # Return the suggested protocol's address
+    return result["suggested"]["address"]
 
 
 class _ActionError:
