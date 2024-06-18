@@ -21,3 +21,29 @@ train_fine_tuning_model.ipynb
 - `tests/`: Contains the test cases for the utils.
 - `utils/`: Contains the utility functions used in the project. e.g. , get_supported_network_by_id, etc.
 - `web3_utils/`: Contains the web3 utility functions. e.g. get_erc20_token_info, etc.
+
+### Setup
+
+Execute the following commands to setup the project:
+
+```bash
+$ ./scripts/setup.sh
+```
+
+To update the ERC-20 tokens from CoinMarketCap, execute the following command:
+
+```bash
+$ ./scripts/update_erc20_tokens.sh
+```
+
+To update the protocol embeddings, execute the following command:
+
+```bash
+$ ./scripts/update_protocols.sh
+```
+
+To create the fine-tuning dataset, execute the following command:
+
+```bash
+python train_fine_tuning_model.py
+```

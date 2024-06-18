@@ -1,4 +1,5 @@
 from typing import List
+import ast
 
 import matplotlib.pyplot as plt
 from scipy import spatial
@@ -186,3 +187,13 @@ def tsne_components_from_embeddings(
     tsne = TSNE(n_components=n_components, **kwargs)
     array_of_embeddings = np.array(embeddings)
     return tsne.fit_transform(array_of_embeddings)
+
+
+def convert_to_numpy_array(embedding: str) -> np.ndarray:
+    """
+    Convert a string representation of a NumPy array to a NumPy array.
+    This is used when reading a csv as the 'embedding' column is read as a string.
+    """
+    if isinstance(embedding, str):
+        embedding = ast.literal_eval(embedding)
+        return np.array(embedding)

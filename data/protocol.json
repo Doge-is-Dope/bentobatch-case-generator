@@ -1,0 +1,30 @@
+[
+  {
+    "id": "yearn_polygon_dai_vault",
+    "protocol": "yearn v3",
+    "chain": "polygon",
+    "description": "DAI yVault-A on Polygon is an investment product by Yearn Finance that allows users to deposit DAI and earn yield through automated DeFi strategies. Utilizing advanced techniques like lending, yield farming, and liquidity provision, the vault optimizes returns and compounds earnings automatically. This hands-off approach to investing provides stable returns, leveraging DAI's stability while participating in the DeFi ecosystem. Users can deposit DAI at contract address 0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B, enjoy automated yield generation, and withdraw their funds with accrued interest at their convenience.",
+    "address": "0x90b2f54C6aDDAD41b8f6c4fCCd555197BC0F773B"
+  },
+  {
+    "id": "yearn_polygon_usdt_vault",
+    "protocol": "yearn v3",
+    "chain": "polygon",
+    "description": "USDT yVault-A on Polygon is an investment product by Yearn Finance that allows users to deposit USDT and earn yield through automated DeFi strategies. Utilizing advanced techniques like lending, yield farming, and liquidity provision, the vault optimizes returns and compounds earnings automatically. This hands-off approach to investing provides stable returns, leveraging USDT's stability while participating in the DeFi ecosystem. Users can deposit USDT at contract address 0x84E13785B5a27879921D6Ff77f8f6687E9d5b2f7, enjoy automated yield generation, and withdraw their funds with accrued interest at their convenience.",
+    "address": "0x84E13785B5a27879921D6Ff77f8f6687E9d5b2f7"
+  },
+  {
+    "id": "yearn_polygon_usdc_vault",
+    "protocol": "yearn v3",
+    "chain": "polygon",
+    "description": "USDC yVault-A is a yield-generating vault on the Polygon network, managed by Yearn Finance. This vault allows users to deposit their USDC (USD Coin) to earn optimized returns through various DeFi strategies. The vault's smart contract address is 0x305F25377d0a39091e99B975558b1bdfC3975654, ensuring transparency and ease of interaction on the Polygon blockchain.",
+    "address": "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0"
+  },
+  {
+    "id": "yearn_polygon_weth_vault",
+    "protocol": "yearn v3",
+    "chain": "polygon",
+    "description": "WETH yVault-A is a yield-generating vault on the Polygon network, managed by Yearn Finance. It allows users to deposit their WETH (Wrapped Ether) to earn optimized returns through various DeFi strategies. The vault's smart contract address is 0x305F25377d0a39091e99B975558b1bdfC3975654, ensuring transparency and ease of interaction on the Polygon blockchain.",
+    "address": "0x305F25377d0a39091e99B975558b1bdfC3975654"
+  }
+]
