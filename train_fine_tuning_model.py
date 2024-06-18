@@ -146,4 +146,4 @@ if __name__ == "__main__":
 
     # Start the fine-tuning process
     job_id = start_fine_tuning(training_file_id, validation_file_id)
-    print(f"Fine-tuning started with ID: {job_id}")
+    print(f"Fine-tuning started. Job ID: {job_id}")
